@@ -141,12 +141,12 @@
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          // Ajout de - 1 afin d'obtenir l'indice de l'élément précédent présent dans le tableau "imagesCollection". Exemple, image 5 - 1 = image 4
-          index = i - 1;
+          index = i;
         }
       });
+      //correction le -1 doit s'appliquer ici
       next =
-        imagesCollection[index] ||
+        imagesCollection[index - 1] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -177,11 +177,11 @@
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          // Même logique qu'avec prevImage, en ajoutant + 1 pour avancer dans le tableau
-          index = i + 1;
+          index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      //Correction index + 1
+      next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
