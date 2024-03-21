@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="./assets/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&amp;family=Spectral:ital,wght@0,400;1,300;1,400;1,800&amp;display=swap" 
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter&amp;family=Spectral:ital,wght@0,400;1,300;1,400;1,800&amp;display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <meta charset="UTF-8" />
 
     <script
@@ -25,6 +29,39 @@
       name="description"
       content="Nina Carducci, photographe professionnelle située à Bordeaux, création de photographies exceptionnelles pour diverses occasions telles que mariages, événements culturels, entreprises, et des moments de vie inoubliables."
     />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Photograph",
+        "name": "Nina Carducci",
+        "image": "https://github.com/LaflorentieNicolas/P5-Nina-Carducci/blob/main/assets/images/nina.webp",
+        "priceRange": "50€ - 400€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33 5 56 67 78 89",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ],
+        "url": "https://laflorentienicolas.github.io/P5-Nina-Carducci/"
+      }
+    </script>
   </head>
   <body>
     <header class="top-header">
@@ -85,11 +122,13 @@
                 src="./assets/images/slider/1920-slider-ryoji-iwata.webp"
                 width="1920"
                 height="887"
-                srcset="./assets/images/slider/375-slider-ryoji-iwata.webp 375w, 
-                ./assets/images/slider/768-slider-ryoji-iwata.webp 768w,
-                ./assets/images/slider/1024-slider-ryoji-iwata.webp 1024w"
+                srcset="
+                  ./assets/images/slider/375-slider-ryoji-iwata.webp   375w,
+                  ./assets/images/slider/768-slider-ryoji-iwata.webp   768w,
+                  ./assets/images/slider/1024-slider-ryoji-iwata.webp 1024w
+                "
                 alt="Un homme traverse un passage piéton"
-                class="d-block w-100" 
+                class="d-block w-100"
                 loading="lazy"
                 sizes="100vw"
               />
@@ -99,11 +138,13 @@
                 src="./assets/images/slider/1920-slider-nicholas-green.webp"
                 width="1920"
                 height="887"
-                srcset="./assets/images/slider/375-slider-nicholas-green.webp 375w, 
-                ./assets/images/slider/768-slider-nicholas-green.webp 768w,
-                ./assets/images/slider/1024-slider-nicholas-green.webp 1024w"
+                srcset="
+                  ./assets/images/slider/375-slider-nicholas-green.webp   375w,
+                  ./assets/images/slider/768-slider-nicholas-green.webp   768w,
+                  ./assets/images/slider/1024-slider-nicholas-green.webp 1024w
+                "
                 alt="Du public danse dans un concert"
-                class="d-block w-100" 
+                class="d-block w-100"
                 loading="lazy"
                 sizes="100vw"
               />
@@ -113,11 +154,13 @@
                 src="./assets/images/slider/1920-slider-edward-cisneros.webp"
                 width="1920"
                 height="887"
-                srcset="./assets/images/slider/375-slider-edward-cisneros.webp 375w, 
-                ./assets/images/slider/768-slider-edward-cisneros.webp 768w,
-                ./assets/images/slider/1024-slider-edward-cisneros.webp 1024w"
+                srcset="
+                  ./assets/images/slider/375-slider-edward-cisneros.webp   375w,
+                  ./assets/images/slider/768-slider-edward-cisneros.webp   768w,
+                  ./assets/images/slider/1024-slider-edward-cisneros.webp 1024w
+                "
                 alt="Un couple de marié ouvre le bal"
-                class="d-block w-100" 
+                class="d-block w-100"
                 loading="lazy"
                 sizes="100vw"
               />
