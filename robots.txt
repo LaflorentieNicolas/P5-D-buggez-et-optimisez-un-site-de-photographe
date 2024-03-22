@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /private/
+Disallow: 
+ 
 Sitemap: https://laflorentienicolas.github.io/P5-Nina-Carducci/sitemap.xml
